@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Beams from "./Beams";
 import './App.css'
 
 function App() {
@@ -9,6 +10,38 @@ function App() {
 
   return (
     <>
+
+<div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <LightRays
+    raysOrigin="top-center"
+    raysColor="#ffffff"
+    raysSpeed={1}
+    lightSpread={0.5}
+    rayLength={3}
+    followMouse={true}
+    mouseInfluence={0.1}
+    noiseAmount={0}
+    distortion={0}
+    className="custom-rays"
+    pulsating={false}
+    fadeDistance={1}
+    saturation={1}
+/>
+</div>
+
+    <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <Beams
+    beamWidth={3}
+    beamHeight={30}
+    beamNumber={20}
+    lightColor="#130404"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={30}
+  />
+</div>
+    
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
