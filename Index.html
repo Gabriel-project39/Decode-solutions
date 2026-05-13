@@ -33,9 +33,14 @@
   </nav>
 
  <!-- HERO SECTION -->
-<section class="min-h-screen flex items-center justify-center px-6">
+<section 
+  class="min-h-screen flex items-start px-10 bg-cover bg-center relative"
 
-  <div class="text-center max-w-4xl">
+  style="background-image: url('https://images.openai.com/static-rsc-4/FxKZ44d_buzII8pX7XuA6WR7nRUS6D0GeAMWdgxe6tnQp7mVeePmwXHQVlUaBSCYzT9cjmTfNgrn9Mi9utUi4T22AXfgc86_DinpSiP0drRlWMiKqBCBKritBLyUEJo6S0ZBRifwAG3kBKbijQ50UKYhVO-w_Koq0yE7oulzuQnPmhiHe3VBOR2NPFtSAIzH?purpose=fullsize');
+">
+
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-2xl text-left ">
 
     <!-- Small Badge -->
     <p class="text-red-500 font-semibold uppercase tracking-widest mb-4">
@@ -43,13 +48,13 @@
     </p>
 
     <!-- Typing Title -->
-    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-white">
   <span id="typing-text"></span>
   <span id="cursor" class="border-r-2 border-red-500 animate-pulse"></span>
 </h1>
 
     <!-- Description -->
-    <p class="text-lg md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+    <p class="text-lg md:text-2xl text-white mb-8">
       We build modern digital experiences that help businesses grow faster and stand out.
     </p>
 
@@ -60,10 +65,10 @@
 
 </section>
 
-<section class="py-20 bg-black text-white">
+<section class="py-20 bg-black text-white p">
 
   <!-- Heading -->
-  <div class="text-center mb-16">
+  <div class="text-center ">
 
     <p class="text-red-500 uppercase tracking-[6px] mb-4">
       Our Services
@@ -81,7 +86,7 @@
   </div>
 
   <!-- CARDS GRID -->
-  <div class="grid md:grid-cols-3 gap-10 place-items-center px-6">
+  <div class="grid md:grid-cols-3 gap-10 place-items-center px-3 p-1">
 
     <!-- YOUR 3D CARDS GO HERE -->
 
@@ -91,9 +96,9 @@
 
  <!-- 3DFLIP CARD SECTION -->
 
-<section class="min-h-screen bg-black flex items-center justify-center p-10">
+<section class="min-h-screen bg-black flex items-center justify-center p-4">
 
-  <div class="grid md:grid-cols-3 gap-8">
+  <div class="grid md:grid-cols-3 gap-3">
 
     <!-- CARD 1 -->
     <div class="card">
@@ -194,7 +199,7 @@
 </section>
 
 <!-- STATS SECTION -->
-<section class="py-28 bg-yellow-900 text-white overflow-hidden">
+<section class="py-28 bg-[#f4f1f1] text-white overflow-hidden">
 
   <!-- Heading -->
   <div class="text-center mb-20">
@@ -202,40 +207,62 @@
       Decode Business Solutions
     </p>
 
-    <h1 class="text-5xl md:text-6xl font-extrabold">
+    <h1 class="text-5xl md:text-6xl text-red-500 font-extrabold">
       Driving Digital Innovation
     </h1>
   </div>
 
-  <!-- Diagonal Layout -->
-  <div class="max-w-6xl mx-auto flex flex-col gap-10 px-6">
+  <!-- STATS SECTION -->
+<section class="py-20 bg-[#f4f1f1] overflow-hidden">
+
+  <!-- TOP LINE -->
+  <div class="max-w-6xl mx-auto border-t border-gray-300 mb-14"></div>
+
+  <!-- STATS GRID -->
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-14 gap-x-10 px-6 text-center">
 
     <!-- CARD 1 -->
-    <div class="stat-card right-card ml-0">
-      <h1 class="counter" data-target="5">0</h1>
-      <h2>Years of Innovation</h2>
-      <p>Building modern digital experiences and scalable business solutions.</p>
+    <div class="flex flex-col items-center">
+      <h1 class="counter text-4xl md:text-6xl font-serif text-gray-500 leading-none" data-target="5">
+        5+
+      </h1>
+
+      <h2 class="uppercase tracking-[2px] text-[10px] md:text-xs text-gray-400 mt-3 leading-relaxed">
+        Years of Innovation
+      </h2>
     </div>
 
     <!-- CARD 2 -->
-    <div class="stat-card right-card  ml-12 md:ml-32">
-      <h1 class="counter" data-target="250">0</h1>
-      <h2>Projects Delivered</h2>
-      <p>Helping brands grow through technology, branding, and strategy.</p>
+    <div class="flex flex-col items-center">
+      <h1 class="counter text-4xl md:text-6xl font-serif text-gray-500 leading-none" data-target="5000">
+        5000+
+      </h1>
+
+      <h2 class="uppercase tracking-[2px] text-[10px] md:text-xs text-gray-400 mt-3 leading-relaxed">
+        Projects Delivered
+      </h2>
     </div>
 
     <!-- CARD 3 -->
-    <div class="stat-card left-card ml-24 md:ml-64">
-      <h1 class="counter" data-target="98">0</h1>
-      <h2>Client Satisfaction</h2>
-      <p>Focused on quality, creativity, and long-term partnerships.</p>
+    <div class="flex flex-col items-center">
+      <h1 class="counter text-4xl md:text-6xl font-serif text-gray-500 leading-none" data-target="98">
+        98%
+      </h1>
+
+      <h2 class="uppercase tracking-[2px] text-[10px] md:text-xs text-gray-400 mt-3 leading-relaxed">
+        Client Satisfaction
+      </h2>
     </div>
 
     <!-- CARD 4 -->
-    <div class="stat-card left-card ml-36 md:ml-96">
-      <h1 class="counter" data-target="1">0</h1>
-      <h2>Singular Mission</h2>
-      <p>Transforming ideas into powerful digital realities.</p>
+    <div class="flex flex-col items-center">
+      <h1 class="counter text-4xl md:text-6xl font-serif text-gray-500 leading-none" data-target="1">
+        01
+      </h1>
+
+      <h2 class="uppercase tracking-[2px] text-[10px] md:text-xs text-gray-400 mt-3 leading-relaxed">
+        Singular Mission
+      </h2>
     </div>
 
   </div>

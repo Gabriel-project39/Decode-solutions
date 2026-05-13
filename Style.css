@@ -2,6 +2,7 @@
   width: 300px;
   height: 450px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .card-inner {
@@ -129,6 +130,7 @@
 .marquee-content img{
   width: 180px;
   height: 100px;
+  cursor: pointer;
 
   object-fit: contain;
 
