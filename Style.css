@@ -110,3 +110,47 @@
   transform: translateX(0);
 }
 
+<!-- MARQUEE --
+.marquee{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content{
+  display: flex;
+  gap: 80px;
+
+  width: max-content;
+
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-content img{
+  width: 180px;
+  height: 100px;
+
+  object-fit: contain;
+
+  filter: grayscale(100%);
+
+  transition: 0.4s;
+}
+
+.marquee-content img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* CONTINUOUS SCROLL */
+@keyframes scroll{
+
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-50%);
+  }
+
+}
