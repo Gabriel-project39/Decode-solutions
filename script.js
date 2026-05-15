@@ -1,3 +1,10 @@
+ const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
 const text = "Decode Business Solutions, where quality meets creativity";
   let i = 0;
 

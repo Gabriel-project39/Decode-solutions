@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Decode Solutions</title>
+</head>
+<body>
+     
+    <nav class="bg-black text-white px-6 py-4">
+    
+    <div class="flex items-center justify-between">
+
+        <img 
+    src="https://www.dbs.co.ke/wp-content/uploads/2023/02/cropped-Capture-removebg-resized-removebg-preview.png" 
+    alt="Logo"
+     class="w-14 h-14 object-contain"
+/>
+      
+
+      <ul class="hidden md:flex gap-14 text-lg">
+            <li><a href="#" class="hover:text-red-500 transition">Home</a></li>
+            <li><a href="Work.html" class="hover:text-red-500 transition">Work</a></li>
+            <li><a href="About.html" class="hover:text-red-500 transition">About</a></li>
+            <li><a href="Contact.html" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
+
+        <!-- HAMBURGER BUTTON -->
+        <button id="menu-btn" class="md:hidden text-3xl">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+        <ul class="flex flex-col gap-4 text-lg">
+            <li><a href="Index.html" class="block hover:text-red-500">Home</a></li>
+            <li><a href="Work.html" class="block hover:text-red-500">Work</a></li>
+            <li><a href="About.html" class="block hover:text-red-500">About</a></li>
+            <li><a href="Contact.html" class="block hover:text-red-500">Contact</a></li>
+        </ul>
+
+    </div>
+
+  </nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Contact | Decode Business Solutions</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      overflow-x:hidden;
+      background:#050505;
+    }
+
+    .luxury{
+      font-family:'Playfair Display',serif;
+    }
+
+    /* PARALLAX */
+    .parallax{
+      background-attachment:fixed;
+      background-size:cover;
+      background-position:center;
+    }
+
+    /* FADE */
+    .fade-up{
+      opacity:0;
+      transform:translateY(60px);
+      transition:1s ease;
+    }
+
+    .fade-up.active{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    /* BIG WORD */
+    .bg-word{
+      position:absolute;
+      font-size:12vw;
+      font-weight:900;
+      color:rgba(255,255,255,0.03);
+      pointer-events:none;
+      user-select:none;
+      z-index:0;
+    }
+
+    /* GLASS EFFECT */
+    .glass{
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(15px);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    /* INPUTS */
+    .input{
+      width:100%;
+      padding:20px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:20px;
+      color:white;
+      outline:none;
+      transition:.4s;
+    }
+
+    .input:focus{
+      border-color:#f97316;
+      background:rgba(255,255,255,0.08);
+    }
+
+    textarea{
+      resize:none;
+      height:180px;
+    }
+
+    .line{
+      width:70px;
+      height:2px;
+      background:#f97316;
+      margin-bottom:30px;
+    }
+
+    /* FLOATING GLOW */
+    .glow{
+      position:absolute;
+      width:400px;
+      height:400px;
+      background:#f97316;
+      filter:blur(140px);
+      opacity:.12;
+      border-radius:50%;
+    }
+
+  </style>
+</head>
+
+<body class="text-white">
+
+  <!-- HERO -->
+  <section 
+    class="relative h-screen flex items-center parallax overflow-hidden"
+    style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1800&auto=format&fit=crop');"
+  >
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <!-- GLOWS -->
+    <div class="glow top-0 left-0"></div>
+    <div class="glow bottom-0 right-0"></div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 px-8 md:px-24 max-w-6xl">
+
+      <p class="uppercase tracking-[8px] text-orange-400 text-sm mb-5 fade-up">
+        Contact Decode
+      </p>
+
+      <div class="line fade-up"></div>
+
+      <h1 class="text-5xl md:text-8xl font-black leading-none mb-10 fade-up">
+        let’s build <br>
+        something unforgettable.
+      </h1>
+
+      <p class="text-gray-300 text-lg md:text-2xl max-w-3xl leading-relaxed fade-up">
+        Whether you need branding, design, promotional products or a complete
+        business identity transformation — Decode Business Solutions is ready
+        to bring your vision to life.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="relative py-40 px-8 md:px-20 overflow-hidden bg-[#0b0b0b]">
+
+    <div class="bg-word top-0 right-0">
+      CONNECT
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-20 items-center relative z-10">
+
+      <!-- LEFT -->
+      <div>
+
+        <p class="uppercase tracking-[5px] text-orange-400 text-sm mb-5 fade-up">
+          start a conversation
+        </p>
+
+        <div class="line fade-up"></div>
+
+        <h2 class="luxury text-4xl md:text-6xl leading-tight mb-10 fade-up">
+          We create brands that people remember.
+        </h2>
+
+        <p class="text-gray-400 text-lg leading-9 mb-12 fade-up">
+          At Decode Business Solutions, we combine creativity, strategy,
+          and innovation to help businesses stand out in competitive markets.
+          Let’s collaborate and create something impactful together.
+        </p>
+
+        <!-- CONTACT INFO -->
+        <div class="space-y-8">
+
+          <div class="fade-up">
+            <h3 class="text-xl font-bold mb-2">
+              Email
+            </h3>
+
+            <p class="text-gray-400">
+              gkimanthi.email.com
+            </p>
+          </div>
+
+          <div class="fade-up">
+            <h3 class="text-xl font-bold mb-2">
+              Phone
+            </h3>
+
+            <p class="text-gray-400">
+              +254 700 123 456
+            </p>
+          </div>
+
+          <div class="fade-up">
+            <h3 class="text-xl font-bold mb-2">
+              Location
+            </h3>
+
+            <p class="text-gray-400">
+              Nairobi, Kenya
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="glass p-10 md:p-14 rounded-[40px] fade-up">
+
+        <h2 class="text-3xl md:text-4xl font-bold mb-10">
+          Send A Message
+        </h2>
+
+       <form 
+  action="https://formsubmit.co/gkimanthi9@gmail.com"
+  method="POST"
+  class="space-y-6"
+>
+
+  <input type="hidden" name="_captcha" value="false">
+
+  <input 
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    class="input"
+    required
+  >
+
+  <input 
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    class="input"
+    required
+  >
+
+  <textarea 
+    name="message"
+    placeholder="Your Message"
+    class="input"
+    required
+  ></textarea>
+
+  <button 
+    type="submit"
+    class="bg-orange-500 px-8 py-4 rounded-xl"
+  >
+    Send Message
+  </button>
+
+</form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PARALLAX QUOTE -->
+  <section 
+    class="relative h-[70vh] flex items-center justify-center text-center parallax overflow-hidden"
+    style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1800&auto=format&fit=crop');"
+  >
+
+    <div class="absolute inset-0 bg-black/75"></div>
+
+    <div class="relative z-10 px-8">
+
+      <h2 class="luxury text-4xl md:text-7xl leading-tight max-w-5xl mx-auto fade-up">
+        Great brands are not created by chance —
+        they are designed with purpose.
+      </h2>
+
+    </div>
+
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="relative py-40 px-8 md:px-20 bg-black overflow-hidden">
+
+    <div class="bg-word bottom-0 left-0">
+      WHY US
+    </div>
+
+    <div class="text-center mb-24 relative z-10">
+
+      <p class="uppercase tracking-[5px] text-orange-400 text-sm mb-5 fade-up">
+        why businesses choose decode
+      </p>
+
+      <div class="line mx-auto fade-up"></div>
+
+      <h2 class="text-5xl md:text-7xl font-black fade-up">
+        More Than Just Branding
+      </h2>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-3 gap-10 relative z-10">
+
+      <!-- CARD -->
+      <div class="glass p-10 rounded-[40px] hover:-translate-y-3 transition-all duration-700 fade-up">
+
+        <h3 class="text-3xl font-bold mb-6">
+          Creative Strategy
+        </h3>
+
+        <p class="text-gray-400 leading-9">
+          We blend market research, innovation and design thinking
+          to create impactful branding solutions.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="glass p-10 rounded-[40px] hover:-translate-y-3 transition-all duration-700 fade-up">
+
+        <h3 class="text-3xl font-bold mb-6">
+          Premium Design
+        </h3>
+
+        <p class="text-gray-400 leading-9">
+          From logos and packaging to promotional materials,
+          every detail is crafted with precision.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="glass p-10 rounded-[40px] hover:-translate-y-3 transition-all duration-700 fade-up">
+
+        <h3 class="text-3xl font-bold mb-6">
+          Real Impact
+        </h3>
+
+        <p class="text-gray-400 leading-9">
+          We help brands grow, attract customers,
+          and leave memorable impressions in their industries.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="relative py-48 overflow-hidden">
+
+    <!-- BG -->
+    <div 
+      class="absolute inset-0 parallax"
+      style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1800&auto=format&fit=crop');"
+    ></div>
+
+    <div class="absolute inset-0 bg-black/85"></div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 max-w-5xl mx-auto text-center px-8">
+
+      <p class="uppercase tracking-[5px] text-orange-400 text-sm mb-5 fade-up">
+        decode business solutions
+      </p>
+
+      <div class="line mx-auto fade-up"></div>
+
+      <h1 class="text-5xl md:text-8xl font-black leading-tight mb-10 fade-up">
+        Your Brand <br>
+        Deserves Attention.
+      </h1>
+
+      <p class="text-gray-300 text-lg md:text-2xl leading-relaxed mb-12 max-w-4xl mx-auto fade-up">
+        Let’s create branding experiences that inspire confidence,
+        attract customers, and make your business impossible to ignore.
+      </p>
+
+      <button class="bg-orange-500 hover:bg-orange-600 transition-all duration-500 px-12 py-5 rounded-full text-lg font-semibold fade-up">
+        Work With Decode
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // SCROLL FADE EFFECT
+    const fadeElements = document.querySelectorAll('.fade-up')
+
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('active')
+        }
+      })
+    },{
+      threshold:0.2
+    })
+
+    fadeElements.forEach((el)=>{
+      observer.observe(el)
+    })
+
+  </script>
+
+</body>
+</html>
+
+
+</body>
+</html>

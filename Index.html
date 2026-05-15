@@ -19,15 +19,29 @@
      class="w-14 h-14 object-contain"
 />
       
+ <ul class="hidden md:flex gap-14 text-lg">
+            <li><a href="#" class="hover:text-red-500 transition">Home</a></li>
+            <li><a href="Work.html" class="hover:text-red-500 transition">Work</a></li>
+            <li><a href="About.html" class="hover:text-red-500 transition">About</a></li>
+            <li><a href="Contact.html" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
 
-      <ul class="flex gap-6 text-lg">
-        <li><a href="#" class="hover:text-red-500 transition">Home</a></li>
-        <li><a href="Work.html" class="hover:text-red-500 transition">Work</a></li>
-        <li><a href="#" class="hover:text-red-500 transition">About</a></li>
-        <li><a href="#" class="hover:text-red-500 transition">Contact</a></li>
-      </ul>
+        <!-- HAMBURGER BUTTON -->
+        <button id="menu-btn" class="md:hidden text-3xl">
+            ☰
+        </button>
 
+    </div>
 
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+        <ul class="flex flex-col gap-4 text-lg">
+            <li><a href="#" class="block hover:text-red-500">Home</a></li>
+            <li><a href="Work.html" class="block hover:text-red-500">Work</a></li>
+            <li><a href="About.html" class="block hover:text-red-500">About</a></li>
+            <li><a href="Contact.html" class="block hover:text-red-500">Contact</a></li>
+        </ul>
+    
     </div>
 
   </nav>
@@ -84,6 +98,54 @@
     </p>
 
   </div>
+
+  <!-- FONT AWESOME -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<div class="whatsapp-wrapper">
+
+  <!-- ROTATING CIRCLE TEXT -->
+  <div class="text-circle">
+
+    <svg viewBox="0 0 200 200" class="rotating-text">
+
+      <defs>
+        <path
+          id="circlePath"
+          d="
+            M 100,100
+            m -75,0
+            a 75,75 0 1,1 150,0
+            a 75,75 0 1,1 -150,0
+          "
+        />
+      </defs>
+
+      <text>
+        <textPath href="#circlePath">
+          • GET IN TOUCH WITH US • GET IN TOUCH WITH US •
+        </textPath>
+      </text>
+
+    </svg>
+
+  </div>
+
+  <!-- WHATSAPP BUTTON -->
+  <a
+    href="https://api.whatsapp.com/send?phone=254737861314&text=Hi%20Decode%20Business%20Solutions,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+    target="_blank"
+    class="whatsapp-btn"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+</div>
+
 
   <!-- CARDS GRID -->
   <div class="grid md:grid-cols-3 gap-10 place-items-center px-3 p-1">

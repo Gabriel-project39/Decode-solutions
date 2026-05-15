@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Decode Solutions</title>
+</head>
+<body>
+     
+    <nav class="bg-black text-white px-6 py-4">
+    
+    <div class="flex items-center justify-between">
+
+        <img 
+    src="https://www.dbs.co.ke/wp-content/uploads/2023/02/cropped-Capture-removebg-resized-removebg-preview.png" 
+    alt="Logo"
+     class="w-14 h-14 object-contain"
+/>
+      
+
+      <ul class="hidden md:flex gap-14 text-lg">
+            <li><a href="Index.html" class="hover:text-red-500 transition">Home</a></li>
+            <li><a href="Work.html" class="hover:text-red-500 transition">Work</a></li>
+            <li><a href="About.html" class="hover:text-red-500 transition">About</a></li>
+            <li><a href="Contact.html" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
+
+        <!-- HAMBURGER BUTTON -->
+        <button id="menu-btn" class="md:hidden text-3xl">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+        <ul class="flex flex-col gap-4 text-lg">
+            <li><a href="#" class="block hover:text-red-500">Home</a></li>
+            <li><a href="Work.html" class="block hover:text-red-500">Work</a></li>
+            <li><a href="About.html" class="block hover:text-red-500">About</a></li>
+            <li><a href="Contact.html" class="block hover:text-red-500">Contact</a></li>
+        </ul>
+
+  </nav>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About | Decode Business Solutions</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    body{
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0a;
+      overflow-x: hidden;
+    }
+
+    .luxury-font{
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* PARALLAX */
+    .parallax{
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* HERO TEXT ANIMATION */
+    .fade-up{
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 1s ease;
+    }
+
+    .fade-up.active{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* LINE */
+    .line{
+      width: 70px;
+      height: 2px;
+      background: #ff5e00;
+      margin-bottom: 30px;
+    }
+
+    /* BIG WORDS */
+    .bg-word{
+      position: absolute;
+      font-size: 12vw;
+      font-weight: 900;
+      color: rgba(255,255,255,0.03);
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* GLASS */
+    .glass{
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+  </style>
+</head>
+
+<body class="text-white">
+
+  <!-- HERO SECTION -->
+  <section 
+    class="relative h-screen flex items-center overflow-hidden parallax"
+    style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1800&auto=format&fit=crop');"
+  >
+
+    <!-- DARK OVERLAY -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 max-w-6xl px-8 md:px-20">
+
+      <p class="uppercase tracking-[8px] text-orange-400 text-sm mb-5 fade-up">
+        About Decode
+      </p>
+
+      <div class="line fade-up"></div>
+
+      <h1 class="text-5xl md:text-8xl font-black leading-none max-w-5xl fade-up">
+        we believe brands were meant to stand for more.
+      </h1>
+
+    </div>
+
+  </section>
+
+  <!-- STORY SECTION -->
+  <section class="relative py-40 px-8 md:px-24 bg-[#f5f3f0] text-black overflow-hidden">
+
+    <div class="bg-word top-10 left-10">
+      STORY
+    </div>
+
+    <div class="max-w-5xl ml-auto relative z-10">
+
+      <p class="uppercase tracking-[5px] text-gray-500 text-sm mb-5 fade-up">
+        our founding story
+      </p>
+
+      <div class="line fade-up"></div>
+
+      <p class="luxury-font text-2xl md:text-5xl leading-relaxed fade-up">
+        Decode Business Solutions was built on a belief that branding should do more than simply exist — it should move people. 
+        We create identities that speak with clarity, visuals that leave lasting impressions, and strategies that help businesses rise above the noise.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="relative py-40 px-8 md:px-24 bg-[#111111] overflow-hidden">
+
+    <div class="bg-word bottom-0 right-0">
+      DECODE
+    </div>
+
+    <div class="max-w-5xl relative z-10">
+
+      <p class="uppercase tracking-[5px] text-orange-400 text-sm mb-5 fade-up">
+        our manifesto
+      </p>
+
+      <div class="line fade-up"></div>
+
+      <h2 class="luxury-font text-3xl md:text-6xl leading-relaxed text-gray-100 fade-up">
+
+        We are the creators of bold identities and unforgettable impressions.
+        We believe businesses deserve more than ordinary branding — they deserve stories, emotion, and experiences that people remember.
+
+      </h2>
+
+    </div>
+
+  </section>
+
+  <!-- PARALLAX IMAGE SECTION -->
+  <section 
+    class="relative h-[80vh] parallax flex items-center justify-center text-center"
+    style="background-image:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1800&auto=format&fit=crop');"
+  >
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 px-8">
+
+      <h2 class="text-5xl md:text-7xl font-black leading-tight mb-8 fade-up">
+        Creativity <br>
+        Meets Strategy
+      </h2>
+
+      <p class="text-gray-300 max-w-3xl mx-auto text-lg leading-9 fade-up">
+        From brand acceleration and graphic design to premium promotional products,
+        we transform businesses into recognizable and impactful brands.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- VALUES SECTION -->
+  <section class="relative py-40 px-8 md:px-20 bg-black overflow-hidden">
+
+    <div class="bg-word top-0 left-0">
+      VALUES
+    </div>
+
+    <div class="text-center mb-24 relative z-10">
+
+      <p class="uppercase tracking-[5px] text-orange-400 text-sm mb-5 fade-up">
+        what drives us
+      </p>
+
+      <div class="line mx-auto fade-up"></div>
+
+      <h2 class="text-5xl md:text-7xl font-black fade-up">
+        Built To Make Brands Matter
+      </h2>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-3 gap-10 relative z-10">
+
+      <!-- CARD -->
+      <div class="glass p-10 rounded-[40px] hover:-translate-y-3 transition-all duration-700 fade-up">
+
+        <h3 class="text-3xl font-bold mb-6">
+          Innovation
+        </h3>
+
+        <p class="text-gray-400 leading-9">
+          Every project begins with fresh thinking, modern creativity,
+          and strategies designed to make your business stand out.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="glass p-10 rounded-[40px] hover:-translate-y-3 transition-all duration-700 fade-up">
+
+        <h3 class="text-3xl font-bold mb-6">
+          Identity
+        </h3>
+
+        <p class="text-gray-400 leading-9">
+          We believe branding is more than visuals — it is the voice,
+          emotion, and perception behind your business.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="glass p-10 rounded-[40px] hover:-translate-y-3 transition-all duration-700 fade-up">
+
+        <h3 class="text-3xl font-bold mb-6">
+          Impact
+        </h3>
+
+        <p class="text-gray-400 leading-9">
+          Our goal is to create branding experiences that leave lasting
+          impressions and drive real business growth.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FINAL SECTION -->
+  <section class="relative py-48 overflow-hidden">
+
+    <!-- VIDEO STYLE BACKGROUND -->
+    <div 
+      class="absolute inset-0 parallax"
+      style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1800&auto=format&fit=crop');"
+    ></div>
+
+    <div class="absolute inset-0 bg-black/80"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center px-8">
+
+      <p class="uppercase tracking-[5px] text-orange-400 text-sm mb-5 fade-up">
+        decode business solutions
+      </p>
+
+      <div class="line mx-auto fade-up"></div>
+
+      <h1 class="text-5xl md:text-8xl font-black leading-tight mb-10 fade-up">
+        Let’s Build Something People Remember.
+      </h1>
+
+      <p class="text-gray-300 text-lg md:text-2xl leading-relaxed mb-12 max-w-4xl mx-auto fade-up">
+        We create branding experiences that inspire trust, attract attention,
+        and help businesses grow with confidence in a constantly evolving world.
+      </p>
+
+      
+
+    </div>
+
+  </section>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // FADE UP ANIMATION
+    const fadeElements = document.querySelectorAll('.fade-up')
+
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('active')
+        }
+      })
+    },{
+      threshold:0.2
+    })
+
+    fadeElements.forEach((el)=>{
+      observer.observe(el)
+    })
+
+  </script>
+
+</body>
+</html>
+    
+</body>
+</html>

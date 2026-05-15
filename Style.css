@@ -1,3 +1,105 @@
+ /* FLOATING WRAPPER */
+  .whatsapp-wrapper{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+  }
+
+  /* ROTATING TEXT */
+  .text-circle{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    animation: rotateText 10s linear infinite;
+  }
+
+  .rotating-text{
+    width: 100%;
+    height: 100%;
+  }
+
+  .rotating-text text{
+    fill: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  /* WHATSAPP BUTTON */
+  .whatsapp-btn{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #25D366;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+
+    position: relative;
+    z-index: 2;
+
+    box-shadow:
+      0 0 20px rgba(37,211,102,0.7),
+      0 0 50px rgba(37,211,102,0.5);
+
+    transition: 0.3s ease;
+  }
+
+  .whatsapp-btn:hover{
+    transform: scale(1.08);
+  }
+
+  /* ROTATION */
+  @keyframes rotateText{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+  /* MOBILE */
+  @media(max-width:768px){
+
+    .whatsapp-wrapper{
+      width: 130px;
+      height: 130px;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .text-circle{
+      width: 130px;
+      height: 130px;
+    }
+
+    .rotating-text text{
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    .whatsapp-btn{
+      width: 75px;
+      height: 75px;
+      font-size: 38px;
+    }
+  }
+
+
+
 .card {
   width: 300px;
   height: 450px;
