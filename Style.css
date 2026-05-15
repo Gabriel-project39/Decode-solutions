@@ -1,3 +1,35 @@
+ .card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+/* IMAGE */
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT OVER IMAGE */
+.card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(0,0,0,0.35);
+}
+
+ 
  /* FLOATING WRAPPER */
   .whatsapp-wrapper{
     position: fixed;
