@@ -1,109 +1,105 @@
- const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+// =========================
+// MOBILE MENU
+// =========================
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-    menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-    });
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+}
 
-const text = "Decode Business Solutions, where quality meets creativity";
+
+// =========================
+// TYPING EFFECT
+// =========================
+const typingText = document.getElementById("typing-text");
+const cursor = document.getElementById("cursor");
+
+if (typingText) {
+  const text = "Decode Business Solutions, where quality meets creativity";
   let i = 0;
 
   function typeWriter() {
     if (i < text.length) {
-      document.getElementById("typing-text").innerHTML += text.charAt(i);
+      typingText.innerHTML += text.charAt(i);
       i++;
       setTimeout(typeWriter, 60);
-    } else {
-      // Hide cursor when typing is done
-      document.getElementById("cursor").style.display = "none";
+    } else if (cursor) {
+      cursor.style.display = "none";
     }
   }
 
-  window.onload = typeWriter;
+  window.addEventListener("load", typeWriter);
+}
 
 
-const counters = document.querySelectorAll('.counter');
+// =========================
+// COUNTER ANIMATION
+// =========================
+const counters = document.querySelectorAll(".counter");
 
-const observer = new IntersectionObserver((entries) => {
+if (counters.length > 0) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const target = +counter.getAttribute("data-target");
 
-  entries.forEach(entry => {
+        let count = 0;
 
-    if(entry.isIntersecting){
+        const updateCounter = () => {
+          const increment = target / 100;
 
-      const counter = entry.target;
-      const target = +counter.getAttribute('data-target');
-
-      let count = 0;
-
-      const updateCounter = () => {
-
-        const increment = target / 100;
-
-        if(count < target){
-          count += increment;
-          counter.innerText = Math.ceil(count);
-
-          setTimeout(updateCounter, 20);
-
-        } else {
-
-          // Add symbols
-          if(target === 98){
-            counter.innerText = target + "%";
+          if (count < target) {
+            count += increment;
+            counter.innerText = Math.ceil(count);
+            setTimeout(updateCounter, 20);
+          } else {
+            if (target === 98) {
+              counter.innerText = target + "%";
+            } else if (target === 1) {
+              counter.innerText = "01";
+            } else {
+              counter.innerText = target + "+";
+            }
           }
-          else if(target === 1){
-            counter.innerText = "01";
-          }
-          else{
-            counter.innerText = target + "+";
-          }
+        };
 
-        }
+        updateCounter();
+        observer.unobserve(counter);
+      }
+    });
+  }, { threshold: 0.5 });
 
-      };
-
-      updateCounter();
-
-      observer.unobserve(counter);
-
-    }
-
+  counters.forEach((counter) => {
+    observer.observe(counter);
   });
-
-}, { threshold: 0.5 });
-
-counters.forEach(counter => {
-  observer.observe(counter);
-});
+}
 
 
+// =========================
+// SCROLL REVEAL ANIMATION
+// =========================
 const hiddenElements = document.querySelectorAll(
-  '.right-card, .left-card'
+  ".right-card, .left-card"
 );
 
-const revealObserver = new IntersectionObserver((entries) => {
-
-  entries.forEach((entry) => {
-
-    if(entry.isIntersecting){
-
-      entry.target.classList.add('show');
-
-    } else {
-
-      // Remove when leaving screen
-      entry.target.classList.remove('show');
-
-    }
-
+if (hiddenElements.length > 0) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  }, {
+    threshold: 0.3
   });
 
-}, {
-  threshold: 0.3
-});
-
-hiddenElements.forEach((el) => {
-  revealObserver.observe(el);
-});
-
-  
+  hiddenElements.forEach((el) => {
+    revealObserver.observe(el);
+  });
+} 
